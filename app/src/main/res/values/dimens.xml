@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="hundred_dp">@dimen/_100sdp</dimen>
+    <dimen name="fifty_dp">@dimen/_50sdp</dimen>
+    <dimen name="twenty_dp">@dimen/_20sdp</dimen>
+    <dimen name="fifteen_dp">@dimen/_15sdp</dimen>
+    <dimen name="ten_dp">@dimen/_10sdp</dimen>
+
+    <!--Use only for TextSize-->
+
+
+    <dimen name="app_bar_height">@dimen/_42sdp</dimen>
+
+    <!--Edit Text-->
+
+
+</resources>

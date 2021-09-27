@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/ten_dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:layout_centerInParent="true"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_marginEnd="@dimen/ten_dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/logout"
+                android:src="@android:drawable/ic_lock_power_off"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"/>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:text="Post Office List"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/visa"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/visa"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/custom"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/customofficer"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/passport"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/paasport"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/terminal"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/terminal"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/varification"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/varification"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ticket"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:background="@drawable/bg_ticket_list">
+
+            <ImageView
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ticket"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyItem"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ten_dp" />
+
+
+</LinearLayout>
